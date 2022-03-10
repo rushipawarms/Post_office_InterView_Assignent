@@ -24,7 +24,7 @@ function App() {
     </AuthProvider>
     </React.Fragment>
     </Router>
-    <MainPage/>
+    
     </>
   );
 }
