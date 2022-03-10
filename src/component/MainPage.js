@@ -27,7 +27,7 @@ function MainPage() {
             else if(data[0].Status=="Success")
             {
                 setdata(data[0].PostOffice);
-                setpin();
+                setpin('');
             }
             console.log(resp.data);
             console.log(data[0].PostOffice)
