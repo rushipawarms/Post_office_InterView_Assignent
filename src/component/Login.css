@@ -1,0 +1,19 @@
+.LogInWrapper{
+    display: flex;
+    justify-content: center;
+}
+.LogInCard{
+   width: 35vw;
+   margin-top: 5%;
+}
+
+
+@media screen and (min-width: 768px) {
+
+    
+    .LogInCard{
+       width: 35vw;
+      
+    }
+   
+  }

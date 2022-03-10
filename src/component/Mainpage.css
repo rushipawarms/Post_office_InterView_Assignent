@@ -1,0 +1,27 @@
+.main{
+    justify-content: space-evenly;
+    display: flex;
+
+}
+
+
+.AllPost{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 31rem;
+    width: 76rem;
+    border: black 0.15rem solid;
+    margin-left: 10rem;
+    margin-top: 1rem;
+    flex-wrap: wrap;
+    overflow: auto;
+}
+.SubPost{
+    margin-left: 1rem;
+    background-color: lightslategray;
+    padding: 2px;
+   border: 1px rgb(0, 255, 106) solid;
+   color: aliceblue;
+   border-radius: 0.3rem;
+}

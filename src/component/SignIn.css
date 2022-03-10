@@ -1,0 +1,20 @@
+.SignUpWrapper{
+    display: flex;
+    justify-content: center;
+}
+.SignUpCard{
+   width: 27vw;
+   margin-top: 5%;
+}
+
+@media screen and (max-width: 768px) {
+
+    .SignUpWrapper{
+        display: flex;
+        justify-content: center;
+    }
+    .SignUpCard{
+       width: 75vw;
+       margin-top: 5%;
+    }
+  }
