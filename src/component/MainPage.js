@@ -3,13 +3,14 @@ import React, { useState } from 'react'
 import './Mainpage.css'
 import axios from 'axios'
 import Alert from '@mui/material/Alert';
+import { useNavigate} from 'react-router-dom'
 
 function MainPage() {
         const[data,setdata]=useState([])
         const[error,seterror]=useState('')
         const[post,setpost]=useState('')
         const[Pincode,setpin]=useState();
-
+        const navigate = useNavigate();
     let handleClick1=async()=>{
        
         try{
@@ -39,6 +40,9 @@ function MainPage() {
             }, 3000);
         }
 
+    }
+    let handleOptimization=()=>{
+        navigate('/Optimize');
     }
     let handleClick2=async()=>
     {
@@ -73,7 +77,7 @@ function MainPage() {
     }
   return (
    <>
-   <h1 style={{ display: "flex",justifyContent: "center"}}>Welcome to post office</h1>
+   <h1 style={{ display: "flex",justifyContent: "center"}}>Welcome to post office&nbsp;<button onClick={handleOptimization}> Go and check Optimization</button></h1>
    <div className='main'>
         <div className='sub1' >
             <h2>Post Office serach by Name</h2>

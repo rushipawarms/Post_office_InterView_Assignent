@@ -7,6 +7,8 @@ import MainPage from './component/MainPage';
 import {BrowserRouter as Router,Routes,Route,BrowserRouter} from 'react-router-dom';
 import {AuthProvider} from './Context/AuthContext'
 import PrivateRoute from './component/PrivateRoute'
+import Counter from './component/Counter';
+import Optimize from './component/Optimize';
 function App() {
   return (
   <>
@@ -20,10 +22,14 @@ function App() {
       <Route path='/Main' element={<PrivateRoute/>}>
       <Route path='/Main' element={<MainPage/>}/>
       </Route>
+      <Route path='/Optimize' element={<PrivateRoute/>}>
+      <Route path='/Optimize' element={ <Optimize/>}/>
+      </Route>
     </Routes>
     </AuthProvider>
     </React.Fragment>
     </Router>
+  
     
     </>
   );
